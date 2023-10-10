@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Local List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+
+
+    <!--Page Header-->
+
+    <div class="title">
+
+        <h1>The Local List</h1>
+
+    </div>
+
+    <!--Contains Search Bar And Tag Line On Page-->
+    <div class="search">
+
+
+        <div id="tagLine">
+
+            <h3>Where Are You Traveling To Next?</h3>
+
+        </div>
+
+        <!--The Search Bar-->
+        <div class="searchBar">
+            <div>
+                <!-- <input id="originInput" type="text" placeholder="Where Are Your Coming From..."> -->
+                <input id="destinationInput" type="text" placeholder="Where Are You Going Next...">
+                <input id="dateInput" type="date">
+            </div>
+
+            <div class="searchButton">
+                <button id="button" type="button">Search</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Previous Searches-->
+    <div class="recent">
+
+        <h4>Recent Searches</h4>
+
+        <ul id="prevSearches">
+        </ul>
+
+    </div>
+
+    <!--Results For The Desired Location-->
+    <div class="results">
+
+
+        <div id="placeholder">
+
+            <h2>New Adventures Await</h2>
+
+        </div>
+
+        <div id="cityName">
+
+        </div>
+
+        <div class="weather-container">
+            <div class="heading-flex">
+                <h2 id="city-name"></h2>
+                <img src="" id="weather-icon">
+            </div>
+            <p id="current-date"></p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+            <p id="humidty"></p>
+
+            <h2 id="5-day-forecast"></h2>
+            <div id="display-forecast"></div>
+        </div>
+
+
+        <!--Events section-->
+        <section>
+            <h1>Events</h1>
+            <div>
+                <input id="eventsKeywordInput" type="text" placeholder="Keyword...">
+                <!-- <input id="dateInput" type="date"> -->
+            </div>
+            <div id="eventsList" class="grid grid-flow-row auto-rows-max">
+            </div>
+        </section>
+
+        <div class="flex
+        items-center
+        justify-center 
+        h-64">
+            <h1 class="text-white text-3xl font-semibold"></h1>
+
+            <h1 class="text-white text-3xl font-semibold"></h1>
+        </div>
+
+
+    </div>
+    <!-- The Modal -->
+    <div id="msgModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="informMessage"></p>
+        </div>
+    </div>
+
+
+    <!--Holds all of the Script Links for JS And APIs-->
+    <div class="Scripts">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./Assets/script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+            integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+    </div>
+
+
+</body>
+
+</html>

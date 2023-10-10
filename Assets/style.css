@@ -1,0 +1,161 @@
+body {
+    font-family: monospace;
+    font-size: 16px;
+    height: 1000px;
+}
+
+h1 {
+    border: black solid;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+textarea {
+    border: black solid 10px;
+    font-size: 12px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#originInput {
+    border: black;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 10px;
+    width: -webkit-fill-available;
+}
+
+#destinationInput {
+    border: black;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 10px;
+    width: -webkit-fill-available;
+}
+
+#button {
+    background-color: skyblue;
+    border-radius: 15px;
+    width: 80px;
+}
+
+#display-forecast {
+    display: flex;
+}
+
+#display-forecast div {
+    background-color: lightgray;
+    margin: 10px;
+    color: black;
+}
+
+
+.title {
+    background-image: url("./Images/world.jpg");
+    font-size: 36px;
+    color: black;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 30%; */
+    padding: 10px;
+    margin: 10px;
+}
+
+#tagLine {
+    text-align: center;
+    color: black;
+
+}
+
+.searchBar {
+    color: black;
+    text-align: right;
+    margin: 0;
+    width: 357px;
+    margin: 4px auto;
+    text-align: center;
+    display: inline-block;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent {
+    color: black;
+    text-align: center;
+}
+
+.results {
+    color: black;
+    text-align: center;
+}
+
+.auto-rows-auto {
+    grid-auto-rows: auto;
+}
+
+.col-span-8 {
+    text-align: left
+}
+
+.grid {
+    border-color: rgb(255 255 255);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
